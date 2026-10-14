@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Traductor de Código Morse</title>
+    
+    <link rel="stylesheet" href="./public/css/b5.css">
+    <link rel="stylesheet" href="./public/css/main.css">
+    
+    <script src="./public/js/b5.js"></script>
+    <script src="./public/js/popper.js"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            
+            <div class="col-12 text-center mb-3">
+                <h1>Traductor de Código Morse</h1>
+                <hr>
+            </div>
+            
+            <div class="col-md-8">
+                <div class="card shadow-sm p-4 mb-4">
+                    
+                    <div class="mb-3">
+                        <label class="form-label fw-bold" for="tipoConversion">Tipo de Conversión:</label>
+                        <select id="tipoConversion" class="form-select">
+                            <option value="textoToMorse">Texto a Código Morse</option>
+                            <option value="morseToTexto">Código Morse a Texto</option>
+                        </select>
+                    </div>
+
+                    <div class="mb-4">
+                        <label id="labelEntrada" class="form-label fw-bold" for="entradaTexto">Texto a convertir:</label>
+                        <textarea id="entradaTexto" class="form-control" rows="3" placeholder="Escribe tu texto aquí..."></textarea>
+                    </div>
+
+                    <button id="btnCalcular" type="button" class="btn btn-primary btn-lg w-100 fw-bold">
+                        Convertir
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-8" id="resultado"></div>
+
+        </div>
+    </div>
+
+    <div class="text-center my-4">
+        <button type="button" id="btnLimpiar" class="btn btn-secondary">Limpiar</button>
+    </div>
+
+    <script src="./public/js/bundle.js"></script>
+</body>
+</html>
